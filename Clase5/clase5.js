@@ -20,4 +20,4 @@ class libro {
 }
 const libro1 = new libro("'Red, White and Royal Blue'", "2500", "Romance", "Casey Mcquiston");
 const libro2 = new libro("'Shadow and Bone'", "2000", "Fantasía", "Leigh Bardugo");
-producto1.vender();
+libro1.vender();
