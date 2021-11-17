@@ -1,0 +1,67 @@
+Header{
+    padding: 25px;
+    background-color: #214942;
+    background-position: center;
+    background-attachment: fixed;
+    height: 625px;
+    display: grid;
+    grid-template-areas: 
+    "logo menu"
+    "frase frase"
+    "buscador buscador";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+        .header_navbar{
+            padding: 25px;
+            color: #f0f0f0;
+            grid-area: menu;
+            align-self: start;
+            justify-self: right;
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                a:hover{
+                    color: #83a193;
+                    font-weight: bold;
+                }
+                    a{
+                        text-decoration: none;
+                        color: #f0f0f0;
+                    }
+        }
+                        .header_logo{
+                            font-size: 70px;
+                            grid-area: logo;color: #f0f0f0;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        }
+                            .header_frase{
+                                grid-area: frase;
+                                align-self: center;
+                                text-align: center;
+                                h2{
+                                    font-size: 45px;
+                                    font-weight: bolder;
+                                    color: #f0f0f0;
+                                    
+                                }
+                                h3{
+                                    font-size: 25px;
+                                    font-weight: bold;
+                                    color: #83a193;
+                                }
+                            }
+                                @media (max-width: 768px) {
+                                    header{
+                                        height: 538px;
+                                        width: 100%;
+                                    }
+                                        .header_frase{
+                                            h2{
+                                                font-size: 35px;
+                                            }
+                                            h3{
+                                                font-size: 25px;
+                                        }
+                                    }
+                                }
+                                             
+}
