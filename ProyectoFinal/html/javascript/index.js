@@ -35,6 +35,7 @@
 // const SAS = new libro("Siege and Storm", "1500", "Fantasía", "Leigh Bardugo");
 // const SOC = new libro("Six of Crows", "2000", "Fantasía", "Leigh Bardugo");
 // const CK = new libro("Crooked Kingdom", "2000", "Fantasía", "Leigh Bardugo");
+
 // RWRB.comprar()
 // RWRB.envio()
 // SAB.comprar()
@@ -50,23 +51,23 @@
 // CK.envio()
 
 
-// const libros =   [{  id: 1,  nombre: "Red, white and royal blue", precio: 2000 },
-//                   {  id: 2,  nombre: "Shadow and Bone", precio: 1500 },
-//                   {  id: 3,  nombre: "Starless Sea"  , precio: 2300},
-//                   {  id: 4,  nombre: "Siege and Storm" , precio: 1500},
-//                   {  id: 5,  nombre: "Six of Crows" , precio: 2000},
-//                   {  id: 6,  nombre: "Crooked Kingdom" , precio: 2000}];
+const libros =   [{  id: 1,  nombre: "Red, white and royal blue", precio: 2000 },
+                  {  id: 2,  nombre: "Shadow and Bone", precio: 1500 },
+                  {  id: 3,  nombre: "Starless Sea"  , precio: 2300},
+                  {  id: 4,  nombre: "Siege and Storm" , precio: 1500},
+                  {  id: 5,  nombre: "Six of Crows" , precio: 2000},
+                  {  id: 6,  nombre: "Crooked Kingdom" , precio: 2000}];
 
-// for (const libro of libros) {
+for (const libro of libros) {
 
-//     let info = document.createElement("div");
+    let info = document.createElement("div");
 
-//     info.innerHTML = `<h3> ID: ${libro.id}</h3>
-//                             <p>  Producto: ${libro.nombre}</p>
-//                             <b> $ ${libro.precio}</b>`;
+    info.innerHTML = `<h3> ID: ${libro.id}</h3>
+                            <p>  Producto: ${libro.nombre}</p>
+                            <b> $ ${libro.precio}</b>`;
 
-//     document.body.appendChild(info);
-// }
+    document.body.appendChild(info);
+}
 
 
     let Comprar = document.querySelectorAll(".boton");
