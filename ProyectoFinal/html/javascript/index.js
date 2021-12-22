@@ -96,6 +96,12 @@ for (const libro of libros) {
     console.log(titulo);
 }
 
+$("#botonSelec").on("change" , function(e){
+
+    console.log( e.target.value);
+
+});
+
 
 
 
