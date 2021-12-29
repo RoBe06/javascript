@@ -96,11 +96,51 @@ for (const libro of libros) {
     console.log(titulo);
 }
 
-$("#botonSelec").on("change" , function(e){
+ $ ("#botonSelec").on("change" , function(e){
 
     console.log( e.target.value);
 
 });
+
+
+
+let form = document.getElementById("form-email");
+
+let formTexto = document.getElementById("form-texto");
+
+form.onsubmit = function(event) {
+
+event.preventDefault();
+
+let formDatos = new formDatos(form);
+
+let xhr = new XMLHttpRequest();
+
+xhr.open("POST", form.action, true);
+
+xhr.onload = function(e) {
+
+console.log(xhr);
+
+let response = JSON.parse(xhr.response);
+
+if (xhr.status === 200) {
+
+formTexto.innerHTML = "Success";
+} 
+
+else {
+
+formTexto.innerHTML = "Error: " + response.error;
+
+}
+};
+
+xhr.send(formDatos);
+
+};
+
+
 
 
 
