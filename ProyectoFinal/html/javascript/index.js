@@ -127,6 +127,9 @@ let response = JSON.parse(xhr.response);
 if (xhr.status === 200) {
 
 formTexto.innerHTML = "Success";
+
+console.log(formDatos);
+
 } 
 
 else {
